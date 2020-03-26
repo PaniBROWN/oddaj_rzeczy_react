@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function FourSteps() {
+const FourSteps = () => {
   return (
     <div className="four-steps-container">
       <h3 className="title-line">Wystarczą 4 proste kroki</h3>

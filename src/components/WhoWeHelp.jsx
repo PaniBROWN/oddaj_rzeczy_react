@@ -1,6 +1,6 @@
 import React from "react";
 
-function WhoWeHelp() {
+const WhoWeHelp = () => {
   return (
     <div>
       <h3>Komu pomagamy?</h3>

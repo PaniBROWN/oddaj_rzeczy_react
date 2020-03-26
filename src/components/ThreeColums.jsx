@@ -1,6 +1,6 @@
 import React from "react";
 
-function ThreeColums() {
+const ThreeColums = () => {
   return (
     <div className="three-column-container">
       <div className="column">
