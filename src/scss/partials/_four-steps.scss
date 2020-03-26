@@ -1,0 +1,63 @@
+.four-steps-container{
+    height: 70vh;
+
+    .column-container{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding-right: 12rem;
+        padding-left: 12rem;
+        margin-bottom: 4rem;
+        background-color: $color1;
+        
+        .column{
+            max-width: 10vw;
+            padding: 1rem;
+            font-size: 0.7rem;
+            height: 25vh;
+
+            .icon-1{
+                background-image: url(../../assets/Icon-1.svg);
+            }
+
+            .icon-2{
+                background-image: url(../../assets/Icon-2.svg); 
+            }
+
+            .icon-3{
+                background-image: url(../../assets/Icon-3.svg);
+            }
+
+            .icon-4{
+                background-image: url(../../assets/Icon-4.svg);
+            }
+
+            .icon{
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                height: 3rem;  
+            }
+
+            .title{
+                margin-top: 1rem;
+            }
+
+            .decr{
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .link-line{
+        border: $color4 solid 1px;
+        margin-left: 36rem;
+        padding: 1.5rem;
+        max-width: 5rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $color4;
+        font-weight: ligth;
+        
+    }
+}

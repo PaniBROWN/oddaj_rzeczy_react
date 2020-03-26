@@ -1,34 +1,36 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import * as Scroll from 'react-scroll';
+// import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
-function Header () {
+import { Link } from "react-router-dom";
+
+const Header = () => {
     return (
-      <div>
-        jestem w header
-        <div>
-          <NavLink exact to="/">
-            zaloguj
-          </NavLink>
-          <NavLink exact to="/">
-            załóż konto
-          </NavLink>
+      <div className="header-container">
+        <div className="header-top">
+          <Link className="header-top-line" exact to="/logowanie">
+            Zaloguj
+          </Link>
+          <Link className="header-top-line" exact to="/rejestracja" >
+            Załóż konto
+          </Link>
         </div>
-        <div>
-          <NavLink exact to="/">
+        <div className="header-bottom">
+          <Link className="header-bottom-line" exact to="/">
             Start
-          </NavLink>
-          <NavLink exact to="/">
+          </Link>
+          <Link className="header-bottom-line" exact to="/">
             O co chodzi?
-          </NavLink>
-          <NavLink exact to="/">
+          </Link>
+          <Link className="header-bottom-line" exact to="/">
             O nas
-          </NavLink>
-          <NavLink exact to="/">
+          </Link>
+          <Link  className="header-bottom-line" exact to="/">
             Fundacja i organizacje
-          </NavLink>
-          <NavLink exact to="/">
+          </Link>
+          <Link className="header-bottom-line" exact to="/">
             Kontakt
-          </NavLink>
+          </Link>
         </div>
       </div>
     );

@@ -1,0 +1,34 @@
+.main-section-container{
+    background-image: url(../../assets/Home-Hero-Image.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    height: 100vh;
+
+    .main-section{
+        margin-left: 50vw;
+        padding: 1rem;
+        padding-top: 4rem;
+        height: 100%;
+       
+        
+    }
+    
+    
+}
+
+   .link-section{
+        padding-top: 3rem;
+
+        .link-line{
+            border: $color4 solid 1px;
+            margin: 2rem;
+            padding: 1.5rem;
+            max-width: 5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: $color4;
+            font-weight: ligth;
+    }
+   }  
+
+    

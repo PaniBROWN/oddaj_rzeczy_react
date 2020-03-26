@@ -1,23 +1,28 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Header from "./Header";
 
-function MainSection() {
+const MainSection = () => {
   return (
-    <div>
-      <div>
-        <h3>Zacznij pomagać!</h3>
-        <h3>Oddaj niechciane rzecz w zaufane ręce</h3>
-      </div>
-      <div>
-        <NavLink exact to="/">
-          ODDAJ RZECZY
-        </NavLink>
-        <NavLink exact to="/">
-          ZORAGNIZUJ ZBIÓRKĘ
-        </NavLink>
+    <div className="main-section-container">
+      <Header />
+      <div className="main-section">
+        <div className="title-section">
+          <h3 className="title-line">Zacznij pomagać!</h3>
+          <h3 className="title-line">Oddaj niechciane rzeczy w zaufane ręce</h3>
+        </div>
+        <div className="decoration"></div>
+        <div className="link-section">
+          <Link className="link-line" exact to="/logowanie">
+            ODDAJ RZECZY
+          </Link>
+          <Link className="link-line" exact to="/logowanie">
+            ZORGANIZUJ ZBIÓRKĘ
+          </Link>
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default MainSection;

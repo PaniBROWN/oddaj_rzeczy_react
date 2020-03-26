@@ -1,0 +1,23 @@
+html{
+    font-size: 14px;
+}
+
+body{
+    font-family: $font-base;
+
+}
+
+.title-line{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    color: $color5;
+}
+
+.decoration{
+    height: 3rem;
+    margin-bottom: 1rem;
+    background-image: url(../../assets/Decoration.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

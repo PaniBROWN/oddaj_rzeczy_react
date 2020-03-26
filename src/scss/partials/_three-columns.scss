@@ -1,0 +1,27 @@
+.three-column-container{
+    display: flex;
+    background-color: $color3;
+    height: 40vh;
+
+    .column{
+        margin: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        text-align: center;
+    }
+
+    .number{
+        font-size: 3rem;
+    }
+
+    .title{
+        margin: 1rem;
+    }
+
+    .descr{
+        font-family: $font-alt;
+        font-size: 0.7rem;
+        line-height: 1.3rem;
+        padding: 1rem;
+    }
+}

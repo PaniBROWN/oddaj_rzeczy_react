@@ -1,29 +1,37 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function FourSteps() {
   return (
-    <div>
-      <h3>Wystarczą 4 proste kroki</h3>
-      <div>
-        <p>Wybierz rzeczy</p>
-        <p>ubrania, zabawki, sprzęt i inne</p>
+    <div className="four-steps-container">
+      <h3 className="title-line">Wystarczą 4 proste kroki</h3>
+      <div className="decoration"></div>
+      <div className="column-container">
+        <div className="column">
+          <p className="icon icon-1"> </p>
+          <p className="title">Wybierz rzeczy</p>
+          <p className="decr">ubrania, zabawki, sprzęt i inne</p>
+        </div>
+        <div className="column">
+          <p className="icon icon-2"> </p>
+          <p className="title">Spakuj je</p>
+          <p className="decr">skorzystaj z worków na śmieci</p>
+        </div>
+        <div className="column">
+          <p className="icon icon-3"></p>
+          <p className="title">Zdecyduj komu chcesz pomóc</p>
+          <p className="decr">wybierz zaufane miejsce</p>
+        </div>
+        <div className="column">
+          <p className="icon icon-4"></p>
+          <p className="title">Zamów kuriera</p>
+          <p className="decr">kurier przyjedzie w dogodnym terminie</p>
+        </div>
       </div>
-      <div>
-        <p>Spakuj je</p>
-        <p>skorzystaj z worków na śmieci</p>
-      </div>
-      <div>
-        <p>Zdecyduj komu chcesz pomóc</p>
-        <p>wybierz zaufane miejsce</p>
-      </div>
-      <div>
-        <p>Zamów kuriera</p>
-        <p>kurier przyjedzie w dogodnym terminie</p>
-      </div>
-      <NavLink exact to="/">
+
+      <Link className="link-line" exact to="/logowanie">
         ODDAJ RZECZY
-      </NavLink>
+      </Link>
     </div>
   );
 }

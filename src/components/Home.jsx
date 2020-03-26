@@ -11,7 +11,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-        jestem w Home
         <MainSection />
         <ThreeColums />
         <FourSteps />
