@@ -1,34 +1,34 @@
 import React from "react";
 // import * as Scroll from 'react-scroll';
-// import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from "react-scroll";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
       <div className="header-container">
         <div className="header-top">
-          <Link className="header-top-line" exact to="/logowanie">
+          <NavLink className="header-top-line" exact to="/logowanie">
             Zaloguj
-          </Link>
-          <Link className="header-top-line" exact to="/rejestracja" >
+          </NavLink>
+          <NavLink className="header-top-line" exact to="/rejestracja" >
             Załóż konto
-          </Link>
+          </NavLink>
         </div>
         <div className="header-bottom">
-          <Link className="header-bottom-line" exact to="/">
+          <NavLink className="header-bottom-line" exact to="/">
             Start
-          </Link>
-          <Link className="header-bottom-line" exact to="/">
+          </NavLink>
+          <Link activeClass="active" className="header-bottom-line" exact to="fourSteps" spy={true} smooth={true} duration={900}>
             O co chodzi?
           </Link>
-          <Link className="header-bottom-line" exact to="/">
+          <Link activeClass="active" className="header-bottom-line" exact to="aboutUs" spy={true} smooth={true} duration={900}>
             O nas
           </Link>
-          <Link  className="header-bottom-line" exact to="/">
+          <Link activeClass="active"  className="header-bottom-line" exact to="weHelp" spy={true} smooth={true} duration={900}>
             Fundacja i organizacje
           </Link>
-          <Link className="header-bottom-line" exact to="/">
+          <Link activeClass="active" className="header-bottom-line" exact to="contact"  spy={true} smooth={true} duration={900}>
             Kontakt
           </Link>
         </div>

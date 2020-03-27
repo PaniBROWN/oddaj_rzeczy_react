@@ -1,0 +1,14 @@
+.footer-container{
+    border: red solid 1px;
+    height: 10vh;
+    
+    .footer-icon{
+        .footer-inst{
+            background-image: url(../../assets/Instagram.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: oranged;
+            height: 100%;
+        }
+    }
+}

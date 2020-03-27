@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FourSteps = () => {
   return (
-    <div className="four-steps-container">
+    <div className="four-steps-container" id="fourSteps">
       <h3 className="title-line">Wystarczą 4 proste kroki</h3>
       <div className="decoration"></div>
       <div className="column-container">

@@ -1,8 +1,15 @@
 import React from "react";
 
-function Footer(){
+const Footer = () => {
     return(
-        <div></div>
+        <div className="footer-container">
+            <div className="footer-text"> Copyright by Coders Lab</div>
+            <div className="footer-icon">
+                <p className="inst"></p>
+                <p className="fb"></p>
+            </div>
+
+        </div>
     )
 };
 

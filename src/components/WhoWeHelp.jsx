@@ -2,7 +2,7 @@ import React from "react";
 
 const WhoWeHelp = () => {
   return (
-    <div>
+    <div id="weHelp">
       <h3>Komu pomagamy?</h3>
       <button>Fundacjom</button>
       <button>Organizacjom pozarządowym</button>
